@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    min-height: 180px;
+    justify-content: space-between;
+}
+.header h1 {
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    background: url('../../assets/banner_placeholder.jpg') 0 0;
+    color: white;
+    font-size: 50px;
+}
+
