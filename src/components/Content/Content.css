@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+  }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    padding: 14px 28px;
+    gap: 16px;
+    grid-auto-flow: row;
+
+}
+ 
+body {
+    font-family: 'Noto Serif', sans-serif;
+    padding: 0px;
+    background: rgba(0, 0, 255, 0.3);
+  }
+  
+.header h1 {
+    color: white;
+    font-size: 50px;
+  }
+  
+.topnav {
+    overflow: hidden;
+    background-color: rgba(0, 0, 255, 0.7);
+  }
+  
+.topnav a {
+    float: left;
+    
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+ 
+.leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+.rightcolumn {
+    float: right;
+    width: 25%;
+    background-color: rgba(0, 0, 255, 0.0);
+    padding-left: 10px;
+  }
+  
+.imagem {
+    background-color: #aaa;
+    width: 100%;
+    padding-bottom: 0px;
+    border-radius: 20px;
+    opacity: 0.8;
+  }
+
+.text {
+    padding-top: 10px;
+  }
+  
+.title {
+    padding-bottom: 20px;
+    text-decoration-line: underline;
+    text-shadow: 3px 3px 30px blueviolet;
+  }
+  
+.card {
+    text-align: center;
+    box-shadow: 0px 5px 10px 10px gray;
+    background-color: rgba(70, 70, 70, 0.2);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+    margin-left: 30px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+ul li {
+    width: calc(33.33% - 2em);
+    margin-right: 2em;
+    margin-bottom: 1em;
+  }
+  
+ul li img {
+    max-width: 100%;
+  }
+  
+ul li a {
+    color: #6200EE; /* paleta azul-roxo */
+    text-decoration: none;
+  }
+  
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn{   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+@media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
